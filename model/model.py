@@ -10,7 +10,7 @@ class Model:
         self._config = kwargs["config"]
         self._tokenizer = T5Tokenizer.from_pretrained("google/flan-t5-xl")
         self._model = T5ForConditionalGeneration.from_pretrained(
-            "google/flan-t5-xl", device_map="auto"
+            str(self._data_dir), device_map="auto"
         )
 
     def preprocess(self, request: dict):
