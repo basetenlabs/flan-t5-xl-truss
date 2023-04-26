@@ -8,6 +8,7 @@ class Model:
     def __init__(self, **kwargs) -> None:
         self._data_dir = kwargs["data_dir"]
         self._config = kwargs["config"]
+        self._secrets = kwargs.get("secrets")
         self._tokenizer = None
         self._model = None
 
