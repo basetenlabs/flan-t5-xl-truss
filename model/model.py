@@ -8,9 +8,13 @@ class Model:
     def __init__(self, **kwargs) -> None:
         self._data_dir = kwargs["data_dir"]
         self._config = kwargs["config"]
-        self._tokenizer = T5Tokenizer.from_pretrained("google/flan-t5-xl")
+        self._tokenizer = None
+        self._model = None
+
+    def load(self):
+        self._tokenizer = T5Tokenizer.from_pretrained("google/flan-t5-xl", use_auth_token=self._secrets["hf_access_token"])
         self._model = T5ForConditionalGeneration.from_pretrained(
-            str(self._data_dir), device_map="auto"
+            str(self._data_dir), device_map="auto", use_auth_token=self._secrets["hf_access_token"],
         )
 
     def preprocess(self, request: dict):
