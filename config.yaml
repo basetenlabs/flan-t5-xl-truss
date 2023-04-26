@@ -25,3 +25,8 @@ secrets: {}
 spec_version: '2.0'
 system_packages: []
 live_reload: false
+external_data:
+  - url: https://baseten-public-models-test.s3.us-west-2.amazonaws.com/bin/pytorch_model-00001-of-00002.bin
+    local_data_path: pytorch_model-00001-of-00002.bin
+  - url: https://baseten-public-models-test.s3.us-west-2.amazonaws.com/bin/pytorch_model-00002-of-00002.bin
+    local_data_path: pytorch_model-00002-of-00002.bin
