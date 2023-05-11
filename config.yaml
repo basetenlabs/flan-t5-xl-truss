@@ -1,13 +1,16 @@
 bundled_packages_dir: packages
 data_dir: data
-description: null
+description: Generate sequences of text with a instruction-finetuned LLM
 environment_variables: {}
 examples_filename: examples.yaml
 input_type: Any
 model_class_filename: model.py
 model_class_name: Model
 model_framework: custom
-model_metadata: {}
+model_metadata:
+  pretty_name: Flan-T5 XL
+  tags:
+  - text-generation
 model_module_dir: model
 model_name: Flan-T5 XL
 model_type: custom
