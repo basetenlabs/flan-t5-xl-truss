@@ -1,6 +1,6 @@
 bundled_packages_dir: packages
 data_dir: data
-description: Generate sequences of text with a instruction-finetuned LLM
+description: Generate text from a prompt with this instruction-tuned LLM.
 environment_variables: {}
 examples_filename: examples.yaml
 input_type: Any
