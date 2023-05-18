@@ -1,3 +1,5 @@
+[![Deploy to Baseten](https://user-images.githubusercontent.com/2389286/236301770-16f46d4f-4e23-4db5-9462-f578ec31e751.svg)](https://app.baseten.co/explore/flan_t5)
+
 # FLAN-T5 XL Truss
 
 [Flan-T5 XL](https://huggingface.co/google/flan-t5-xl?text=Q%3A+%28+False+or+not+False+or+False+%29+is%3F+A%3A+Let%27s+think+step+by+step) is an open-source large language model developed by Google.
